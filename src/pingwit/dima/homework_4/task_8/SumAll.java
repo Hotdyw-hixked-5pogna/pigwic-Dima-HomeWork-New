@@ -2,17 +2,18 @@ package pingwit.dima.homework_4.task_8;
 
 public class SumAll {
     public static void main(String[] args) {
-        int i, a;
+
         int sumEven = 0;
         int sumOdd = 0;
-        for (i = 1; i <= 100; i++) {
+        int numbers = 100;
+        for (int i = 1; i <= numbers; i++) {
             if (i % 2 != 0)
                 sumOdd = sumOdd + i;
             {
                 System.out.println(i);
             }
         }
-        for (a = 1; a <= 100; a++) {
+        for (int a = 1; a <= numbers; a++) {
             if (a % 2 == 0)
                 sumEven = sumEven + a;
             {

@@ -3,13 +3,11 @@ package pingwit.dima.homework_4.task_9;
 public class Rhombus {
     public static void main(String[] args) {
         int num = 10;
-
         System.out.println();
         System.out.println("Ромб");
         int z = 0;
         for (int i = 0; i < num / 2; i++) {
             int prob = (num - z) / 2;
-
             for (int j = 0; j < prob; j++) {
                 System.out.print(" ");
             }
