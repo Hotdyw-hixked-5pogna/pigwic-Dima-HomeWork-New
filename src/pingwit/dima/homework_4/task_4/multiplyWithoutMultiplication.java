@@ -1,6 +1,6 @@
-package pingwit.dima.homework_4.task_4;
-public class multiplyWithoutMultiplication {
-    public static int multiplyWithoutMultiplication(int A, int B) {
+package pingwit.dima.homework_4.task_4; // добавь абзац
+public class multiplyWithoutMultiplication { // Название класса с Большой буквы
+    public static int multiplyWithoutMultiplication(int A, int B) { // названия переменных с маленькой буквы, а ты сам решал задачу?
         int result = 0;
         boolean isNegative = false;
         if (A < 0 && B > 0 || A > 0 && B < 0) {

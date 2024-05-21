@@ -7,7 +7,7 @@ public class Athlete {
         double trainingDays = 7;
         double dailyDistanceKm = 10;
         double totalDistanceKm = dailyDistanceKm;
-        for (int i = 1; i <= trainingDays; i++) {
+        for (int i = 1; i <= trainingDays; i++) { // если в trainingDays подставить 1, то за один день спортсмен у тебя пробежит 21 км, а это для него много, проблема в этой строке
             dailyDistanceKm = dailyDistanceKm * distanceIncrease;
             totalDistanceKm = totalDistanceKm + dailyDistanceKm;
             System.out.println(i);

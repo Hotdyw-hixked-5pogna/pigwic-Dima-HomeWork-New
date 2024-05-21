@@ -1,7 +1,7 @@
 package pingwit.dima.homework_4.task_9;
 
 public class Rhombus {
-    public static void main(String[] args) {
+    public static void main(String[] args) { // очень неплохо получилось
         int num = 10;
         System.out.println();
         System.out.println("Ромб");
@@ -16,7 +16,7 @@ public class Rhombus {
             }
             System.out.println();
             z = z + 2;
-        }
+        } // я бы предложил здесь абзац поставить, чтобы визуально отделить
         z = num - 2;
         for (int i = num / 2 + 1; i > 0; i--) {
             int prob = (num - z) / 2;
