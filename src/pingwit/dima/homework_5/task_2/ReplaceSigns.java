@@ -1,5 +1,6 @@
 package pingwit.dima.homework_5.task_2;
 
+//заменить нужно было на ";", а у тебя точка получилась, но это не критично
 public class ReplaceSigns {
     public static void main(String[] args) {
         String line = """

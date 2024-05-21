@@ -1,7 +1,7 @@
 package pingwit.dima.homework_5.task_3;
 
 import java.util.Scanner;
-
+// отформатируй код
 public class ButterflyNew {
         public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);
@@ -13,7 +13,7 @@ public class ButterflyNew {
                 System.out.println("Пожалуйста введите нечетное число размера бабочки");
                 return;
             }
-            for (int i = 1; i <= n; i++) {
+            for (int i = 1; i <= n; i++) { // попробуй решить эту задачу используя только 2 цикла
                 for (int j = 1; j <= i; j++) {
                     System.out.print(j + " ");
                 }
