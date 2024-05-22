@@ -11,12 +11,12 @@ public class EvenArrayElements {
         }
         int[] evenArray = new int[evenCount];
         int index = 0;
-        for (int num : originalArray) {
+        for (int num : originalArray) { // цикл foreach используется, когда нам НЕ нужен индекс и необходимо перебрать все элементы, тебе здесь индекс НУЖЕН, поэтому лучше использовать цикл for
             if (num % 2 == 0) {
                 evenArray[index++] = num;
             }
         }
-        System.out.print("Чётный элементы массива: ");
+        System.out.print("Чётный элементы массива: "); // Чётный -> Чётные
         for (int num : evenArray) {
             System.out.print(num + " ");
         }

@@ -1,14 +1,14 @@
 package pingwit.dima.homework_6.task_8;
 
-import java.util.Arrays;
+import java.util.Arrays; // этот импорт не используется, удали
 
-
+// отформатируй код
 public class SequenceIdenticalArrayElements {
     public static void main(String[] args) {
-        int[] array = {0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0,};
+        int[] array = {1}; // если массив пустой {}, то падает ошибка, если массив из одного элемента, например, {1}, то индекс -1. Подумай как это исправить
 
         int maxCount = 0;
-        int maxElement = 0;
+        int maxElement = 0; // эта переменная не используется, можно удалить
         int maxStartIndex = -1;
 
         int currentCount = 1;
