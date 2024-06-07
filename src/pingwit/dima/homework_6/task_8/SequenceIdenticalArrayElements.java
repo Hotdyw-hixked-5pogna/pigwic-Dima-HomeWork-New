@@ -1,41 +1,40 @@
 package pingwit.dima.homework_6.task_8;
 
-import java.util.Arrays; // этот импорт не используется, удали
-
-// отформатируй код
 public class SequenceIdenticalArrayElements {
     public static void main(String[] args) {
-        int[] array = {1}; // если массив пустой {}, то падает ошибка, если массив из одного элемента, например, {1}, то индекс -1. Подумай как это исправить
+        int[] array = {1, 2, 2, 2, 3, 3, 4, 4, 4, 4, 5, 6, 6, 6, 6, 6, 7};
+        findLongestIdenticalSequence(array);
+    }
 
-        int maxCount = 0;
-        int maxElement = 0; // эта переменная не используется, можно удалить
-        int maxStartIndex = -1;
+    public static void findLongestIdenticalSequence(int[] array) {
+        if (array == null || array.length == 0) {
+            System.out.println("Массив пуст или равен нулю");
+            return;
+        }
 
-        int currentCount = 1;
-        int currentElement = array[0];
-        int currentStartIndex = 0;
+        int maxLength = 1;
+        int currentLength = 1;
+        int startIndex = 0;
+        int maxStartIndex = 0;
 
         for (int i = 1; i < array.length; i++) {
-            if (array[i] == currentElement) {
-                currentCount++;
-            }
-            else {
-                if (currentCount > maxCount) {
-                    maxCount = currentCount;
-                    maxElement = currentElement;
-                    maxStartIndex = currentStartIndex;
+            if (array[i] == array[i - 1]) {
+                currentLength++;
+            } else {
+                if (currentLength > maxLength) {
+                    maxLength = currentLength;
+                    maxStartIndex = startIndex;
                 }
-                currentElement = array[i];
-                currentCount = 1;
-                currentStartIndex = i;
-            }
-            if (currentCount > maxCount) {
-                maxCount = currentCount;
-                maxElement = currentElement;
-                maxStartIndex = currentStartIndex;
+                currentLength = 1;
+                startIndex = i;
             }
         }
-        System.out.println("Количество элементов самой длинной последовательности: " + maxCount);
+
+        if (currentLength > maxLength) {
+            maxLength = currentLength;
+            maxStartIndex = startIndex;
+            }
+        System.out.println("Количество элементов самой длинной последовательности: " + maxLength);
         System.out.println("Индекс начального элемента последовательности: " + maxStartIndex);
     }
 }

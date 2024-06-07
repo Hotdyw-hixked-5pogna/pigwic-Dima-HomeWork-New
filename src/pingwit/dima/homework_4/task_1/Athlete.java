@@ -2,17 +2,15 @@ package pingwit.dima.homework_4.task_1;
 
 public class Athlete {
     public static void main(String[] args) {
-         //todo 7; 1.1; to variables
-        double distanceIncrease = 1.1;
-        double trainingDays = 7;
-        double dailyDistanceKm = 10;
-        double totalDistanceKm = dailyDistanceKm;
-        for (int i = 1; i <= trainingDays; i++) { // если в trainingDays подставить 1, то за один день спортсмен у тебя пробежит 21 км, а это для него много, проблема в этой строке
-            dailyDistanceKm = dailyDistanceKm * distanceIncrease;
-            totalDistanceKm = totalDistanceKm + dailyDistanceKm;
-            System.out.println(i);
+        double initialDistance = 10.0;
+        double totalDistance = 0.0;
+        double dailyDistance = initialDistance;
+        for (int day = 1; day <= 7; day++) {
+            totalDistance += dailyDistance;
+            dailyDistance *= 1.10;
         }
-        System.out.println(totalDistanceKm);
+
+        System.out.println("Общая дистанцыя которую пробежал спортсмен: " + totalDistance);
     }
 }
 

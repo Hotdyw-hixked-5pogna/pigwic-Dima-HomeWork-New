@@ -1,21 +1,19 @@
 package pingwit.dima.homework_6.task_4;
+
 // отформатируй код
 // задача выполнена, попробуй сделать так, чтобы результат красиво выводился, т.е. все столбики были ровными как настоящая таблица
 public class MultiplicationTable {
     public static void main(String[] args) {
-        int size = 10; // 10 -> 9
-        int [][] table = new int[size][size];
-        //
-        for (int i = 0; i < size - 1; i++) { // size - 1 -> size
-            for (int j = 0; j < size - 1; j++) { // size - 1 -> size
-                table[i][j] = (i + 1) * (j + 1);
-            }
+
+        int[][] table = new int[10][2];
+
+        for (int i = 0; i < 10; i++) {
+            table[i][0] = i + 1;
+            table[i][1] = (i + 1) * 9;
         }
-        for (int i = 0; i < size - 1; i++) { // size - 1 -> size
-            for (int j = 0; j < size - 1; j++) { // size - 1 -> size
-                System.out.print(table[i][j] + " ");
-            }
-            System.out.println();
+        System.out.println("Таблица умножения на 9:");
+        for (int i = 0; i < 10; i++) {
+            System.out.printf("%2d * 9 = %2d\n ", table[i][0], table[i][1]);
         }
     }
 }
