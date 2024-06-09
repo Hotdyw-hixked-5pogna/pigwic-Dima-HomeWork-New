@@ -6,7 +6,7 @@ import java.util.List;
 public class EvenArrayElements {
     public static void main(String[] args) {
         int[] originalArray = {5, 3, 8, 1, 2, 4};
-        List<Integer> evenNumbersList = new ArrayList<>();
+        List<Integer> evenNumbersList = new ArrayList<>(); // если знаешь что такое коллекции, то используй не здоровье, если не знаешь, то лучше пока без них
 
         for (int i = 0; i < originalArray.length; i++) {
             

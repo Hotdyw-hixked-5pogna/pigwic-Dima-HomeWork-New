@@ -10,7 +10,7 @@ public class SortAndReverseArray {
         }
         System.out.println();
 
-        int n = array.length;
+        int n = array.length; // n - придумай хорошее название для переменной
         for (int i = 0; i < n / 2; i++) {
 
             int temp = array[i];

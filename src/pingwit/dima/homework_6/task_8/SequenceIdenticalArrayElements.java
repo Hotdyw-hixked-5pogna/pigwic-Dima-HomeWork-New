@@ -1,5 +1,5 @@
 package pingwit.dima.homework_6.task_8;
-
+// отформатируй код
 public class SequenceIdenticalArrayElements {
     public static void main(String[] args) {
         int[] array = {1, 2, 2, 2, 3, 3, 4, 4, 4, 4, 5, 6, 6, 6, 6, 6, 7};

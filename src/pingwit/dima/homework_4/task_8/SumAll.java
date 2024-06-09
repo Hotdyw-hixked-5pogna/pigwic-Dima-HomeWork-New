@@ -7,7 +7,7 @@ public class SumAll {
         int numbers = 100;
         int totalSum = 0;
         for (int i = 0; i <= numbers; i++) {
-            totalSum += i;
+            totalSum += i; // totalSum лучше посчитать 1 раз после выхода из цикла сложив четные и нечетные числа
             if (i % 2 == 0) {
                 sumEven += i;
             } else {
